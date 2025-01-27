@@ -15,6 +15,16 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Playfair Display", serif;
+    background-image: url("images/mainwp4.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    
+
+}
+
 
 nav {
     display: flex;   
@@ -34,7 +44,7 @@ nav {
 .nav-links a {
     text-decoration: none;
     color: white;
-    font-family: "Playfair Display", Serif;
+    font-family: 'Playfair Display', serif;
     letter-spacing: 1px;
     font-size: 16px;
     font-weight: bold;
@@ -65,44 +75,29 @@ header .logo img {
 
 /* all body tags */
 
-
 html, body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-}
-
-body {
-    background-image: url("file:///C:/Users/vanja/OneDrive/Desktop/website/mainwp4.jpg");
-    background-size: cover;
-    background-position: center;
-    color: white;
-    
-
+    font-family: "Playfair Display", Serif;
 }
 
 
 /*virtuosi and backgroung*/
 #title {
     margin: 0;
-    padding: 50px 0;
+    
     font-size: 130px;
     text-align: center;
-    background-image: url("file:///C:/Users/vanja/OneDrive/Desktop/website/header2.jpg");
+    background-image: url("images/header2.jpg");
     background-size: cover;
     background-position: center;
     font-family: 'Playfair Display', serif;
+    padding: 20px;
+    color: white; 
+    text-shadow: 5px 0px 80px gold;
 }
 
-#logo {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 100px;
-    z-index:1;
-    height: auto;
-}
- 
+
 /* class of events */
 .container {
     display: flex;
@@ -132,8 +127,13 @@ body {
 }
 
 
+
+.event a{
+    text-decoration: none;
+}
 .event h5, .event a h5{
     font-size: 25px;
+    
     color: white;
     text-shadow: 2px 2px 5px black;
     padding: 10px;
@@ -184,13 +184,13 @@ h3{
 }
 
 #effe {
-    background-image: url("file:///C:/Users/vanja/OneDrive/Desktop/website/iit2024247_webd/psych.jpeg"); 
+    background-image: url("images/psych.jpeg"); 
     background-size: cover;
     background-position: center;
 }
 
 #inst{
-    background-image: url("file:///C:/Users/vanja/OneDrive/Desktop/website/iit2024247_webd/inst.jpeg");
+    background-image: url("images/inst.jpeg");
     background-size: cover;
     background-position: center;
 }
@@ -198,20 +198,20 @@ h3{
 
 
 #left{
-    background-image: url("file:///C:/Users/vanja/OneDrive/Desktop/website/p1.jpg");
+    background-image: url("images/p1.jpg");
     background-size: cover;
     background-position: center;
 }
 
 #mid{
-    background-image: url("file:///C:/Users/vanja/OneDrive/Desktop/website/p2.jpg");
+    background-image: url("images/p2.jpg");
     background-size: cover;
     background-position: center;
 
 }
 
 #right{
-    background-image: url("file:///C:/Users/vanja/OneDrive/Desktop/website/p3.jpg");
+    background-image: url("images/p3.jpg");
     background-size: cover;
     background-position: center;
    

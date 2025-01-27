@@ -18,7 +18,7 @@
 
 body {
     font-family: 'Playfair Display', serif;
-    background-image: url("file:///C:/Users/vanja/OneDrive/Desktop/website/image.jpg");
+    background-image: url("images/image.jpg");
     background-size: cover;
     background-position: center;
     color: white;
@@ -72,11 +72,12 @@ header .logo img {
 main { 
     padding: 40px;
     text-align: center;
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(4px);
 }
 
 .intro h1 {
     font-size: 50px;
+    color: #ffd700;
     margin-bottom: 10px;
 }
 
@@ -98,6 +99,7 @@ main {
 }
 
 .benefits h2, .tiers h2, .cta h2 {
+    color: #ffd700;
     margin-bottom: 15px;
     font-size: 30px;
 }
@@ -110,7 +112,12 @@ ul {
 ul li {
     margin: 10px 0;
 }
-
+.t h3{
+    color: #ffd700;
+}
+.cta h2{
+    color: #ffd700;
+}
 
 .tiers .t
 {

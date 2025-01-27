@@ -9,6 +9,16 @@
     }
 }
 
+@keyframes borderss{
+    from {
+        border: 5px solid #555;
+    }
+    to {
+        border: 50px solid #555;
+    }
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -17,12 +27,11 @@
 
 body {
     font-family: 'Playfair Display', serif;
-    background-image: url("file:///C:/Users/vanja/OneDrive/Desktop/website/image.jpg");
+    background-image: url("images/image.jpg");
     background-size: cover;
     background-position: center;
     color: white;
 }
-
 nav {
     display: flex;   
 }
@@ -72,7 +81,7 @@ header .logo img {
 main {
     padding: 40px;
     text-align: center;
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(4px);
 }
 
 .intro h1 {
@@ -105,10 +114,9 @@ main {
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
     text-align: left;
-    animation: appear linear;
-    animation-timeline: view();
-    animation-duration: entry 50% cover 50%;
 }
+
+
 
 .workshop h3 {
     font-size: 24px;
