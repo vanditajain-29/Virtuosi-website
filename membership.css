@@ -1,0 +1,152 @@
+@keyframes appear {
+    0% {
+            opacity: 0;
+            transform: scale(0.5);
+    }
+    40% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-image: url("file:///C:/Users/vanja/OneDrive/Desktop/website/image.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+nav {
+    display: flex;   
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-family: "Playfair Display", Serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 9px 18px;
+    border-bottom: 2px solid #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    width: 80px;
+    height: auto;
+}
+
+main { 
+    padding: 40px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+}
+
+.intro h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+
+.benefits, .tiers, .cta{
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    animation: appear linear;
+    animation-timeline: view();
+    animation-duration: entry 50% cover 50%;
+}
+
+.benefits h2, .tiers h2, .cta h2 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+ul {
+    list-style: none;
+    padding-left:0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+
+.tiers .t
+{
+    margin: 10px 0;
+}
+
+button {
+    font-family: 'Playfair Display', serif;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color:black;
+    color: whitesmoke;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: whitesmoke;
+    color: black;
+}
+
+footer {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+footer .socials img {
+    width: 30px;
+    margin: 0 5px;
+    transition: transform 0.3s;
+}
+
+footer .socials img:hover {
+    transform: scale(1.2);
+}

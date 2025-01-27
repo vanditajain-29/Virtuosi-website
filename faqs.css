@@ -1,0 +1,155 @@
+@keyframes appear {
+    0% {
+            opacity: 0;
+            scale: 0.5
+    }
+    40% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+/* general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'playfair display', serif;
+    background-image: url("file:///c:/users/vanja/onedrive/desktop/website/image.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* header styles */
+nav {
+    display: flex;   
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-family: "Playfair Display", Serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 9px 18px;
+    border-bottom: 2px solid #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    width: 80px;
+    height: auto;
+}
+/* main content */
+main {
+    padding: 40px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+}
+
+/* intro section */
+.intro h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+/* faq section */
+.faq {
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    text-align: left;
+    max-width: 800px;
+}
+
+.faq h2 {
+    margin-bottom: 15px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    animation: appear linear;
+    animation-timeline: view();
+    animation-duration: entry 50% cover 50%;
+}
+
+.faq-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.faq-item h3:hover {
+    color: #ffd700;
+}
+
+.faq-item .answer {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.faq-item a{
+    color: #ffd700
+}
+
+/* footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+footer .socials img {
+    width: 30px;
+    margin: 0 5px;
+    transition: transform 0.3s;
+}
+
+footer .socials img:hover {
+    transform: scale(1.2);
+}

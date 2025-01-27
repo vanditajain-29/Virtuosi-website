@@ -1,0 +1,307 @@
+@keyframes appear {
+    0% {
+            opacity: 0;
+            transform: scale(0.5);
+    }
+    40% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav {
+    display: flex;   
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-family: "Playfair Display", Serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 9px 18px;
+    border-bottom: 2px solid #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    width: 80px;
+    height: auto;
+}
+
+
+/* all body tags */
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url("file:///C:/Users/vanja/OneDrive/Desktop/website/mainwp4.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    
+
+}
+
+
+/*virtuosi and backgroung*/
+#title {
+    margin: 0;
+    padding: 50px 0;
+    font-size: 130px;
+    text-align: center;
+    background-image: url("file:///C:/Users/vanja/OneDrive/Desktop/website/header2.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Playfair Display', serif;
+}
+
+#logo {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    z-index:1;
+    height: auto;
+}
+ 
+/* class of events */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+/* class of each  and each coordinator*/
+
+.event, .event a{
+    display:flex;
+    flex: 1;
+    justify-content:center;
+    overflow: hidden;
+    height: 300px;
+    border-radius: 30px;
+    align-items: center;
+    position: relative;
+    background-position: center;
+    margin: 0 auto;
+    background-size: cover;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-duration: entry 50% cover 50%;
+}
+
+
+.event h5, .event a h5{
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    padding: 10px;
+    border: 2px solid white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    width: auto;
+    box-sizing: border-box;
+}
+
+
+h3{
+    text-shadow: 2px 2px 5px rgba(172, 105, 203, 0.913);
+    font-size: 40px;
+    font-family: "Playfair Display",serif;
+    text-align: center;
+}
+
+.event:hover h5, .event:hover a h5{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 80%;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 80%;
+    border-radius: 10px;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.event:hover, .event:hover a{
+    transform: scale(1.1); 
+    transition: transform 0.3s;
+}
+
+
+/* id of each box*/
+#chord {
+    background-image: url("https://boombarstick.com/wp-content/uploads/2020/11/Music-Festivals-1024x682.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#effe {
+    background-image: url("file:///C:/Users/vanja/OneDrive/Desktop/website/iit2024247_webd/psych.jpeg"); 
+    background-size: cover;
+    background-position: center;
+}
+
+#inst{
+    background-image: url("file:///C:/Users/vanja/OneDrive/Desktop/website/iit2024247_webd/inst.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+#left{
+    background-image: url("file:///C:/Users/vanja/OneDrive/Desktop/website/p1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#mid{
+    background-image: url("file:///C:/Users/vanja/OneDrive/Desktop/website/p2.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+#right{
+    background-image: url("file:///C:/Users/vanja/OneDrive/Desktop/website/p3.jpg");
+    background-size: cover;
+    background-position: center;
+   
+}
+
+
+/* contact us area*/
+
+
+.infocont {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+    background: none;
+}
+
+form, .abtus {
+    flex: 1;
+    background-color: rgba(128, 128, 128, 0.5); 
+    padding: 21px;
+    border-radius: 15px;
+    color: white;
+    font-family: cursive;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    text-align: center;
+}
+
+form h5, .abtus h5 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+form input, form textarea, form button {
+    width: 70%; 
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+}
+
+form button {
+    background-color: grey;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: grey 0.3s, color 0.3s;
+    background: linear-gradient(90deg, #7d7d7d, #c5c5c5);
+    border: 1px solid white;
+}
+
+form button:hover {
+    background-color: white;
+    color: black;
+}
+
+.abtus .soc {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.abtus .soc a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.4s;
+}
+
+.abtus .soc a img:hover {
+    transform: scale(1.3);
+    filter: brightness(1.4);
+}
+
+form button, .abtus .soc a {
+    transition: all 0.1s ease-in-out;
+}
+
+p{
+    text-align: center;
+    font-style: italic;
+    font-family: cursive;
+}
+
+/*division*/
+.div {
+    width: 2px;
+    background: white;
+    opacity: 0.7;
+}
+
